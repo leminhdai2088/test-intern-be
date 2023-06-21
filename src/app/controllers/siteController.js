@@ -152,6 +152,12 @@ class siteController {
             const userName = req.body.userName;
             const queryUserName = `SELECT * FROM users WHERE email = '${userName}' OR phone = '${userName}'`;
             const [row] = await sequelize.query(queryUserName);
+            if (!row[0].verified) {
+                return res.json({
+                    status: 401,
+                    message: 'Unauthorized!',
+                });
+            }
             if (row.length == 0) {
                 return res.json({
                     status: 401,

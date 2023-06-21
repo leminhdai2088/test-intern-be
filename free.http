@@ -32,7 +32,7 @@ Content-Type: application/json
 }
 ### show store
 GET http://localhost:3001/freelancer/store
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTY4NzMzMTQ5NywiZXhwIjoxNjg3MzM1MDk3fQ.5Kuc_WWWtmYK5Wdyr5es2IMXZ9px3zaV41urSyDfZ14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 
 
 

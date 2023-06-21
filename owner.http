@@ -33,20 +33,20 @@ Content-Type: application/json
 
 ### show store
 GET http://localhost:3001/owner/store
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzOTcwNiwiZXhwIjoxNjg3MzQzMzA2fQ.HPghRQ6IoG7fIayXn58lCn9cmQtfCYAG-H6g5gvWlVU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 
 ### show employee by storeId
-GET http://localhost:3001/owner/store/4/employee
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMyMjY5NCwiZXhwIjoxNjg3MzI2Mjk0fQ.vD0MlxxTtNHMg2t60DvxYWMCtkTC4fmwESII-88ldD0
+GET http://localhost:3001/owner/store/1/employee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 
 ### show request 
 GET http://localhost:3001/owner/show-request
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzMTU0MSwiZXhwIjoxNjg3MzM1MTQxfQ.Xf2JPsLRz9ealNexC0csVJiIGO4IY7NB_6UtMWigcwQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 
 
 ### accept request
 PUT http://localhost:3001/owner/accept-request
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzMTU0MSwiZXhwIjoxNjg3MzM1MTQxfQ.Xf2JPsLRz9ealNexC0csVJiIGO4IY7NB_6UtMWigcwQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 Content-Type: application/json
 
 {
@@ -56,7 +56,7 @@ Content-Type: application/json
 
 ### find freelancer by phone
 GET http://localhost:3001/owner/find-freelancer?phone=1234545566
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzODM3NSwiZXhwIjoxNjg3MzQxOTc1fQ.UMo3vynRmALcvWjz7y8oQ4W2kX79TAHCDpYDEl0N0z8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 
 ### send request
 POST http://localhost:3001/owner/send-request
@@ -70,14 +70,14 @@ Content-Type: application/json
 
 ### show emloyee group by store
 GET http://localhost:3001/owner/show-empl-gr-store
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzM0MjQwMCwiZXhwIjoxNjg3MzQ2MDAwfQ.jIkL2jFF371gLlvkw1vClMRSeqxIbueAYSq96welx1s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 
 
 ### delete imployee is working in store
 DELETE http://localhost:3001/owner/employee/delete
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzM0MjQwMCwiZXhwIjoxNjg3MzQ2MDAwfQ.jIkL2jFF371gLlvkw1vClMRSeqxIbueAYSq96welx1s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImlhdCI6MTY4NzM1MzUwNywiZXhwIjoxNjg3MzU3MTA3fQ.-jRneSfELzYbbOcGin2JjvjvUOcVWT6YqfpWlhqGZhQ
 Content-Type: application/json
 
 {
-    "id":2
+    "id":1
 }
