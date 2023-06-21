@@ -10,7 +10,7 @@ CREATE TABLE users (
 	gender varchar(10),
 	address varchar(200),
 	verified boolean,
-	opt varchar(10),
+	otp varchar(10),
 	role boolean
 );
 
@@ -71,13 +71,13 @@ values (4, 'Tuấn Kha', '330123154700', 'tk18@gmail.com', 'password', '01/01/20
 insert into users (storeId, name, phone, email, password, birthday, avatar, gender, address, role, verified)
 values (4, 'Tuấn Kha', '220123154700', 'tk19@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
 insert into users (storeId, name, phone, email, password, birthday, avatar, gender, address, role, verified)
-values (5, 'Tuấn Kha', '110123154700', 'tk20@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
+values (1, 'Tuấn Kha', '110123154700', 'tk20@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
 insert into users (storeId, name, phone, email, password, birthday, avatar, gender, address, role, verified)
-values (5, 'Tuấn Kha', '000123154700', 'tk21@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
+values (2, 'Tuấn Kha', '000123154700', 'tk21@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
 insert into users (storeId, name, phone, email, password, birthday, avatar, gender, address, role, verified)
-values (5, 'Tuấn Kha', '120123154700', 'tk22@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
+values (3, 'Tuấn Kha', '120123154700', 'tk22@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
 insert into users (storeId, name, phone, email, password, birthday, avatar, gender, address, role, verified)
-values (5, 'Tuấn Kha', '130123154700', 'tk23@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
+values (4, 'Tuấn Kha', '130123154700', 'tk23@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', false, true);
 insert into users (name, phone, email, password, birthday, avatar, gender, address, role, verified)
 values ('Tuấn Kha', '140123154700', 'tk24@gmail.com', 'password', '01/01/2002','avatar.png', 'nam', 'address1', true, true);
 

@@ -179,7 +179,7 @@ class siteController {
                 return res.json({ token });
             }
         } catch (error) {
-            console.log(err);
+            console.log(error);
             return res.json({
                 status: 500,
                 message: 'Cannot login!',
