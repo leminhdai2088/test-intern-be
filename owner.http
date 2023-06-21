@@ -1,0 +1,83 @@
+### sign-up 
+POST http://localhost:3001/site/sign-up
+Content-Type: application/json
+
+{
+    "name": "Lê Minh Đại",
+    "phone": "0387383584",
+    "email": "louistart0ggy@gmail.com",
+    "password": "123456789",
+    "birthday": "13/06/2002",
+    "avatar": "avatar.png",
+    "gender": "nam",
+    "address": "Long Annnnnnn"
+}
+
+### verify
+PATCH http://localhost:3001/site/verify-email
+Content-Type: application/json
+
+{
+    "email": "louistart0ggy@gmail.com",
+    "otp": "dEcts0"
+}
+
+### login owner
+POST http://localhost:3001/site/login
+Content-Type: application/json
+
+{
+    "userName": "20521153@gm.uit.edu.vn",
+    "password": "123456789"
+}
+
+### show store
+GET http://localhost:3001/owner/store
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzOTcwNiwiZXhwIjoxNjg3MzQzMzA2fQ.HPghRQ6IoG7fIayXn58lCn9cmQtfCYAG-H6g5gvWlVU
+
+### show employee by storeId
+GET http://localhost:3001/owner/store/4/employee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMyMjY5NCwiZXhwIjoxNjg3MzI2Mjk0fQ.vD0MlxxTtNHMg2t60DvxYWMCtkTC4fmwESII-88ldD0
+
+### show request 
+GET http://localhost:3001/owner/show-request
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzMTU0MSwiZXhwIjoxNjg3MzM1MTQxfQ.Xf2JPsLRz9ealNexC0csVJiIGO4IY7NB_6UtMWigcwQ
+
+
+### accept request
+PUT http://localhost:3001/owner/accept-request
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzMTU0MSwiZXhwIjoxNjg3MzM1MTQxfQ.Xf2JPsLRz9ealNexC0csVJiIGO4IY7NB_6UtMWigcwQ
+Content-Type: application/json
+
+{
+    "storeId":2,
+    "freelancerId": 14
+}
+
+### find freelancer by phone
+GET http://localhost:3001/owner/find-freelancer?phone=1234545566
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzMzODM3NSwiZXhwIjoxNjg3MzQxOTc1fQ.UMo3vynRmALcvWjz7y8oQ4W2kX79TAHCDpYDEl0N0z8
+
+### send request
+POST http://localhost:3001/owner/send-request
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzM0MDQ0MSwiZXhwIjoxNjg3MzQ0MDQxfQ.9eP5xp3DmK91QDJanfFciFWSNh14IU8xdDkzURaGO3o
+Content-Type: application/json
+
+{
+    "storeId":2,
+    "freelancerId": 14
+}
+
+### show emloyee group by store
+GET http://localhost:3001/owner/show-empl-gr-store
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzM0MjQwMCwiZXhwIjoxNjg3MzQ2MDAwfQ.jIkL2jFF371gLlvkw1vClMRSeqxIbueAYSq96welx1s
+
+
+### delete imployee is working in store
+DELETE http://localhost:3001/owner/employee/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NzM0MjQwMCwiZXhwIjoxNjg3MzQ2MDAwfQ.jIkL2jFF371gLlvkw1vClMRSeqxIbueAYSq96welx1s
+Content-Type: application/json
+
+{
+    "id":2
+}

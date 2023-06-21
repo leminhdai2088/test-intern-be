@@ -145,7 +145,7 @@ class siteController {
         }
     }
 
-    // /site/login
+    //POST /site/login
     async Login(req, res, next) {
         try {
             // check username

@@ -1,0 +1,56 @@
+### sign-up 
+POST http://localhost:3001/site/sign-up
+Content-Type: application/json
+
+{
+    "name": "Lê Minh Đại",
+    "phone": "0387383584",
+    "email": "louistart0ggy@gmail.com",
+    "password": "123456789",
+    "birthday": "13/06/2002",
+    "avatar": "avatar.png",
+    "gender": "nam",
+    "address": "Long Annnnnnn"
+}
+
+### verify
+PATCH http://localhost:3001/site/verify-email
+Content-Type: application/json
+
+{
+    "email": "louistart0ggy@gmail.com",
+    "otp": "dEcts0"
+}
+
+### login free
+POST http://localhost:3001/site/login
+Content-Type: application/json
+
+{
+    "userName": "louistart0ggy@gmail.com",
+    "password": "123456789"
+}
+### show store
+GET http://localhost:3001/freelancer/store
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTY4NzMzMTQ5NywiZXhwIjoxNjg3MzM1MDk3fQ.5Kuc_WWWtmYK5Wdyr5es2IMXZ9px3zaV41urSyDfZ14
+
+
+
+### send req work
+POST http://localhost:3001/freelancer/send-request/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTY4NzMzMTQ5NywiZXhwIjoxNjg3MzM1MDk3fQ.5Kuc_WWWtmYK5Wdyr5es2IMXZ9px3zaV41urSyDfZ14
+
+
+### show request
+GET  http://localhost:3001/freelancer/show-request
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTY4NzM0MTE2OSwiZXhwIjoxNjg3MzQ0NzY5fQ.jhAqXDwXy6iSkdES8oqEwpThsXjFP1IG-It1P6mAAnQ
+
+
+### respone request
+PUT http://localhost:3001/freelancer/response-request
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTY4NzM0MTE2OSwiZXhwIjoxNjg3MzQ0NzY5fQ.jhAqXDwXy6iSkdES8oqEwpThsXjFP1IG-It1P6mAAnQ
+Content-Type: application/json
+
+{
+    "storeId":2
+}
