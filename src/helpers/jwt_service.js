@@ -6,7 +6,7 @@ const signToken = async (id) => {
         const payload = {
             id,
         };
-        const secret = process.env.TOKEN_SECRET;
+        const secret = '2e8813660497a3f3e0b6b94106477b57c86064077a46de4fd4bc346fcf4251e3';
         const options = {
             expiresIn: '1h', //10s
         };
@@ -31,7 +31,7 @@ const verifyOwnerToken = (req, res, next) => {
     const bearerToken = authHeader.split(' ');
     const token = bearerToken[1];
 
-    JWT.verify(token, process.env.TOKEN_SECRET, async (err, payload) => {
+    JWT.verify(token, '2e8813660497a3f3e0b6b94106477b57c86064077a46de4fd4bc346fcf4251e3', async (err, payload) => {
         if (err) {
             return res.json({
                 status: 401,
